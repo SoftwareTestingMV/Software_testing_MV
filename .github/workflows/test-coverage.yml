@@ -43,13 +43,13 @@ jobs:
     - name: run unit tests with coverage
       run: |
         if [ -z "$(npx jest --listTests)" ]; then
-          echo "⚠️ No tests found."
+          echo "No tests found."
         else
           npm run coverage
         fi
 
     - name: Upload coverage to Coveralls
-          uses: coverallsapp/github-action@v2
-          with:
-            github-token: ${{ secrets.GITHUB_TOKEN }}
-            file: ./coverage/lcov.info
+      uses: coverallsapp/github-action@v2
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        file: ./coverage/lcov.info
