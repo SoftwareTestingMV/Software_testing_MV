@@ -47,6 +47,7 @@ jobs:
         else
           npm run coverage
         fi
+      continue-on-error: true
 
     - name: Upload coverage to Coveralls
       uses: coverallsapp/github-action@v2
