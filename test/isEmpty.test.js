@@ -56,8 +56,8 @@ describe('isEmpty()', () => {
   });
 
   // Empty Buffer should return true
-  test('Buffer.alloc(8) → true', () => {
-    expect(isEmpty(Buffer.alloc(8))).toBe(true);
+  test('Buffer.alloc(0) → true', () => {
+    expect(isEmpty(Buffer.alloc(0))).toBe(true);
   });
 
   // Non-empty Buffer should return false
