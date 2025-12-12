@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "jest",
-    "coverage": "c8 --reporter=lcov --reporter=text jest"
+    "coverage": "c8 --reporter=lcov --reporter=text --include=src/*.js jest"
   },
   "author": "",
   "license": "MIT",
